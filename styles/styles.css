@@ -1,18 +1,5 @@
 /************* your name: Gabriel Barillos
 
-INSTRUCTIONS:
-Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
-
-Comments starting with TO-DO may be left in for reference or removed entirely: all other comments should be left as-is for ease of review.
-
-You are discouraged from changing any provided CSS.
-
-***** colour palette: *****
-- mustard yellow (used for header, footer, and buttons): #E5AF42
-- cornflower blue (used for hover states): #4278e5
-
-*/
-
 /************* site defaults *************/
 body {
     width: 950px;
