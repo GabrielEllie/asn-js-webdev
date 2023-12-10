@@ -9,4 +9,4 @@ function submitted() {
     main.appendChild(paragraph);
 }
 
-submitButton.addEventListener("click", submitted)
+submitButton.addEventListener("click", submitted);

@@ -12,7 +12,7 @@ let tuesday = document.getElementById("tuesday");
 let wednesday = document.getElementById("wednesday");
 let thursday = document.getElementById("thursday");
 let friday = document.getElementById("friday");
-let numOfDays = 0
+let numOfDays = 0;
 
 /********* colour change days of week *********/
 let weekdays = [monday, tuesday, wednesday, thursday, friday];
@@ -30,28 +30,28 @@ function dayCounter() {
 }
 monday.addEventListener("click", function() {
     monday.classList.toggle("clicked");
-    dayCounter()
+    dayCounter();
 });
 tuesday.addEventListener("click", function() {
     tuesday.classList.toggle("clicked");
-    dayCounter()
+    dayCounter();
 });
 wednesday.addEventListener("click", function() {
     wednesday.classList.toggle("clicked");
-    dayCounter()
+    dayCounter();
 });
 thursday.addEventListener("click", function() {
     thursday.classList.toggle("clicked");
-    dayCounter()
+    dayCounter();
 });
 friday.addEventListener("click", function() {
     friday.classList.toggle("clicked");
-    dayCounter()
+    dayCounter();
 });
 
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
-let clearButton  = document.getElementById("clear-button")
+let clearButton  = document.getElementById("clear-button");
 
 function reset() {
     numOfDays = 0;
@@ -60,7 +60,7 @@ function reset() {
     for (let i = 0; i < weekdays.length; i++) {
         weekdays[i].classList.remove("clicked");
     }
-    calculate()
+    calculate();
 }
 
 clearButton.addEventListener("click", reset);
@@ -71,7 +71,7 @@ fullButton.addEventListener("click", function() {
     dailyRate = 35;
     fullDay.classList.add("clicked");
     halfDay.classList.remove("clicked");
-    calculate()
+    calculate();
 });
 
 // selects half button 
@@ -79,7 +79,7 @@ halfButton.addEventListener("click", function() {
     dailyRate = 20;
     fullDay.classList.remove("clicked");
     halfDay.classList.add("clicked");
-    calculate()
+    calculate();
 });
 
 
@@ -91,5 +91,5 @@ halfButton.addEventListener("click", function() {
 
 function calculate() {
     costPerDay = numOfDays*dailyRate;
-    document.getElementById("calculated-cost").innerHTML = costPerDay
+    document.getElementById("calculated-cost").innerHTML = costPerDay;
 }
