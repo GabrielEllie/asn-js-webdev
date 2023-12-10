@@ -1,0 +1,225 @@
+/************* your name: Gabriel Barillos
+
+INSTRUCTIONS:
+Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
+
+Comments starting with TO-DO may be left in for reference or removed entirely: all other comments should be left as-is for ease of review.
+
+You are discouraged from changing any provided CSS.
+
+***** colour palette: *****
+- mustard yellow (used for header, footer, and buttons): #E5AF42
+- cornflower blue (used for hover states): #4278e5
+
+*/
+
+/************* site defaults *************/
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+/* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
+
+.flex {
+    display: flex;
+}
+ 
+
+/************* site-wide text styling *************/
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 36px;
+    padding-bottom: 12px;
+    /* margin-bottom: 12px; */
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.fake-button {
+    background-color: #E5af42;
+    justify-content: center; 
+    /* text-align: center; */
+    line-height: 3;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover, .blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
+
+
+/************* header/footer styling *************/
+
+header, footer {
+    background-color: #E5af42;
+}
+
+header {
+    height: 150px;
+}
+
+header img {
+    width: 100px;
+    padding-top: 25px;
+    padding: 25px 0 25px 25px;
+    justify-content: center;
+    margin-right: 25px;
+    /* margin-top: 25px; */
+}
+
+header h1 {
+    margin: auto;
+}
+
+main {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+footer {
+    height: 60px;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+}
+
+/************* index page *************/
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.index p {
+    padding-bottom: 12px;
+}
+
+.index .fake-button {
+    width: 250px;
+    margin-left: 150px;
+    text-align: center;
+}   
+
+
+/************* bookings page *************/
+
+.booking-page {
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+.day-selector {
+    gap: 20px;
+    justify-content: center;
+    margin: 12px;
+}
+
+.day-selector li {
+    width: 60px;
+}
+
+.day-selector li, .small-button {
+    border: 1px solid black;
+    padding: auto;
+}
+
+.small-button {
+    padding: 5px;
+}
+
+.top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+#clear-button {
+    width: 200px;
+}
+
+.clicked {
+    background-color: #E5af42;
+}
+
+.booking-page .fake-button {
+    margin: auto;
+}
+
+/************* contact page *************/
+
+.contact {
+    height: 420px;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact form div{
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact form div label {
+    text-align: right;
+    width: 150px;
+}
+
+.contact form input, .contact form textarea {
+    width: 300px;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact form input, .contact form textarea, .contact button {
+    font: inherit;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.contact form div{
+    margin-bottom: 24px;
+    column-gap: 24px;
+}
+
+.contact button {
+    line-height: 3;
+    width: 305.6px;
+    margin-left: 173px;
+}
